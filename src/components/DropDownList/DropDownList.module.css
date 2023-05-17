@@ -54,9 +54,10 @@
     border-radius: 8px;
     color: var(--white);
 }
+
 @media  (max-width: 576px) {
     .auto_complete {
-        width: 225px;
+        width: 217px;
     }
 }
 
