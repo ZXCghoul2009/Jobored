@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router';
 import { useAppDispatch } from '../../store';
 import { loginUser } from '../../store/Actions/actionCreators';
 import { ButtonMedium } from '@/UI/Buttons';
@@ -11,8 +10,6 @@ export const LoginPage = (): JSX.Element => {
   const [login, setLogin] = useState('');
   const [password, setPassword] = useState('');
 
-  const navigate = useNavigate();
-
   const submitFormHandler = (event: any) => {
     event.preventDefault();
     const data = {
@@ -22,7 +19,7 @@ export const LoginPage = (): JSX.Element => {
       client_secret: import.meta.env.VITE_CLIENT_SECRET,
       hr: import.meta.env.VITE_CLIENT_HR
     };
-    dispatch(loginUser(data)).then(() => navigate('/'));
+    dispatch(loginUser(data)).then(()=> window.location.reload());
   };
 
   return (
