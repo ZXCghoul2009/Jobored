@@ -1,0 +1,28 @@
+.page {
+    padding: 24px 0 0;
+    display: flex;
+    justify-content: center;
+}
+.vacancy_info__container {
+    min-height: 100vh;
+    width: 54%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.vacancies_container:first-child {
+    margin: 0;
+}
+
+@media (max-width: 576px) {
+    .vacancy_info__container {
+        width: 92%;
+    }
+
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+    .vacancy_info__container {
+        width: 70%;
+    }
+}

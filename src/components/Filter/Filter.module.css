@@ -1,0 +1,46 @@
+.filter_container {
+    background: var(--white);
+    padding: 1.25rem;
+    border: 1px solid var(--grey-200);
+    border-radius: 12px;
+    width: 17.1875rem;
+    max-width: 315px;
+    height: max-content;
+}
+.filter_header {
+    display: flex;
+    justify-content: space-between;
+}
+.filter_header__label {
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 20px;
+    color: var(--black);
+}
+.filter_form {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1.25rem;
+    flex-direction: column;
+}
+.filter_item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 19px;
+    color: var(--black);
+}
+@media  (max-width: 576px) {
+    .filter_container {
+        width: 225px;
+    }
+}
+
+/* Средние мобильные устройства */
+@media (min-width: 577px) and (max-width: 767px) {
+    .filter_container {
+        width: 275px;
+    }
+}

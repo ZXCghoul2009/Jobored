@@ -1,0 +1,62 @@
+.auto_complete {
+    position: absolute;
+    margin-top: 8px;
+    max-height: 188px;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    isolation: isolate;
+    background: var(--white);
+    border-radius: 8px;
+    list-style: none;
+    overflow: auto;
+    overflow-x: hidden;
+    z-index: 3;
+    width: calc(17.1875rem - 8px);
+    height: auto;
+    scrollbar-width: thin;
+}
+.auto_complete::-webkit-scrollbar {
+    width: 4px;
+}
+
+.auto_complete::-webkit-scrollbar-thumb {
+    background: var(--grey-500);
+    border-radius: 20px;
+}
+.auto_complete li {
+    width: 94%;
+    cursor: pointer;
+    padding: 8px;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--black);
+}
+.auto_complete li:hover {
+    text-overflow: ellipsis;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5rem 0 0.5rem 0.75rem;
+    background: var(--blue-100);
+    border-radius: 8px;
+}
+
+
+.auto_complete li:active {
+    padding: 0.5rem 0 0.5rem 0.75rem;
+    background: var(--blue-500-main);
+    border-radius: 8px;
+    color: var(--white);
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+    .auto_complete {
+        width: 270px;
+    }
+}

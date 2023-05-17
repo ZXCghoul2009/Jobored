@@ -1,0 +1,9 @@
+.arrow_disabled svg path {
+    fill: var(--grey-300);
+}
+.arrow:hover path{
+    stroke: var(--blue-400)
+}
+.arrow:active  path {
+    stroke: var(--blue-500-main)
+}

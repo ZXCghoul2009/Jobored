@@ -1,0 +1,12 @@
+.button_variant1 {
+    padding: 0.625rem 1.25rem;
+    background-color: var(--blue-500-main);
+}
+.button_variant2 {
+    padding: 0.625rem 1.25rem;
+    background-color: var(--blue-100);
+    color: var(--blue-600);
+}
+.button_variant2:hover {
+    background-color: var(--blue-200);
+}

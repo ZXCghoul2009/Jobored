@@ -1,0 +1,10 @@
+.icon {
+    position: absolute;
+    right: 0.75rem;
+    top: 3px;
+}
+.input svg {
+    position: absolute;
+
+    right: 0.75rem;
+}

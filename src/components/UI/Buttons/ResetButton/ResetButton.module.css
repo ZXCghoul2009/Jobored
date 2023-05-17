@@ -1,0 +1,25 @@
+.reset_button {
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: var(--grey-500);
+    gap: 4px;
+    cursor: pointer;
+}
+.reset_button:hover {
+    color: var(--blue-400);
+}
+
+.reset_button:hover svg line {
+    stroke: var(--blue-400);
+}
+
+.reset_button:active {
+    color: #5E96FC;;
+}
+
+.reset_button:active svg line {
+    stroke: #5E96FC;
+}

@@ -1,0 +1,80 @@
+
+
+:root {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    --white: #FFFFFF;
+    --grey-100: #F5F5F6;
+    --grey-200: #EAEBED;
+    --grey-300: #D5D6DC;
+    --grey-500: #ACADB9;
+    --grey-600: #7B7C88;
+    --grey-900: #343A40;
+    --black: #232134;
+    --blue-100: #DEECFF;
+    --blue-200: #C9E0FF;
+    --blue-300: #B7D6FF;
+    --blue-400: #92C1FF;
+    --blue-500-main: #5E96FC;
+    --blue-600: #3B7CD3;
+}
+
+
+*, body {
+    padding: 0;
+    margin: 0;
+}
+a,
+a:active, /* активная/посещенная ссылка */
+a:hover, /* при наведении */
+a {
+    text-decoration: none;
+    color: black;
+}
+svg {
+    user-select: none;
+}
+body {
+    --background-button-color-hover: '#7588ff';
+    --background-button-color: orange;
+    --background: linear-gradient(
+            180deg,
+            rgba(113, 135, 205, 0.43) 0%,
+            rgba(214, 219, 235, 0.43) 100%
+    );
+}
+
+
+@media only screen and (max-width: 576px) and (pointer: coarse) {
+    /* Ваши стили для маленьких мобильных устройств */
+    :root {
+        font-size: 12px;
+    }
+}
+
+/* Средние мобильные устройства */
+@media (min-width: 577px) and (max-width: 767px) {
+    :root {
+        font-size: 13px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+/* Планшеты в альбомной ориентации */
+@media (min-width: 992px) and (max-width: 1199px) {
+    :root {
+        font-size: 14px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    :root {
+        font-size: 15px;
+    }
+}

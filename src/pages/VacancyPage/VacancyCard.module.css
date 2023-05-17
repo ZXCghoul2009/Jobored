@@ -1,0 +1,62 @@
+.card_container {
+    background: var(--white);
+    border: 1px solid var(--grey-200);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 90px;
+}
+.vacancy_info__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16.5px;
+}
+.vacancy_tittle {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    color: var(--black);
+}
+.vacancy_info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 12px;
+}
+.vacancy_work__type {
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 20px;
+    color: var(--black);
+}
+.vacancy_location {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--black);
+}
+.vacancy_salary {
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 20px;
+    color: var(--black);
+}
+@media (max-width: 576px) {
+    .card_container div {
+        font-size: 0.9rem;
+    }
+    .card_container {
+        gap: 8px;
+    }
+
+}
