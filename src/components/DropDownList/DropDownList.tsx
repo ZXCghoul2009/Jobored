@@ -38,9 +38,7 @@ export const DropDownList = ({
           ))}
         </ul>
       ) : (
-        <div>
-          <Loader />
-        </div>
+        <div/>
       )}
     </div>
   );

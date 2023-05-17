@@ -14,14 +14,14 @@ export const StarButton = React.memo(({ vacancy }: StarButtonProps) => {
     const data = localStorage.getItem('vacancies');
     if (data) {
       const parsedVacancies = JSON.parse(data);
-      parsedVacancies.map((vacancy: Vacancy) => {
-        if (vacancy.id_vacancy.toString().includes(vacancy.id_vacancy.toString())) {
+      parsedVacancies.map((parsedVacancy: Vacancy) => {
+        if (parsedVacancy.id_vacancy.toString().includes(vacancy.id_vacancy.toString())) {
           return setFavorite(true);
         }
-        return setFavorite(false);
+
       });
     }
-  }, []);
+  }, [favorite, vacancy]);
 
   return (
     <div

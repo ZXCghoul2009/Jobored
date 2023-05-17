@@ -28,8 +28,8 @@
     margin: 0;
 }
 a,
-a:active, /* активная/посещенная ссылка */
-a:hover, /* при наведении */
+a:active,
+a:hover,
 a {
     text-decoration: none;
     color: black;
@@ -49,13 +49,11 @@ body {
 
 
 @media only screen and (max-width: 576px) and (pointer: coarse) {
-    /* Ваши стили для маленьких мобильных устройств */
     :root {
         font-size: 12px;
     }
 }
 
-/* Средние мобильные устройства */
 @media (min-width: 577px) and (max-width: 767px) {
     :root {
         font-size: 13px;
@@ -67,7 +65,6 @@ body {
     }
 }
 
-/* Планшеты в альбомной ориентации */
 @media (min-width: 992px) and (max-width: 1199px) {
     :root {
         font-size: 14px;

@@ -74,7 +74,7 @@ export const FavoritePage = (): JSX.Element => {
               </div>
           )}
           <div className={styles.vacancies_container}>
-            {vacancies &&
+            {vacancies && !isLoading &&
             getItemsForPage(vacancies).map((vacancy: any) => (
                 <VacancyCard
                     key={vacancy.id_vacancy}

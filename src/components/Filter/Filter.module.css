@@ -38,7 +38,6 @@
     }
 }
 
-/* Средние мобильные устройства */
 @media (min-width: 577px) and (max-width: 767px) {
     .filter_container {
         width: 275px;
