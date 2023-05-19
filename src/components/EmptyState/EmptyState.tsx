@@ -10,12 +10,10 @@ interface EmptyStateProps {
 
 export const EmptyState = ({ title }: EmptyStateProps): JSX.Element => {
   const navigate = useNavigate();
-
+  const image = emptyStateImage;
   return (
     <div className={styles.empty_state}>
-      <div>
-        {emptyStateImage && <img src={emptyStateImage.default} alt='Nothing Found' />}
-      </div>
+      <div>{image && <img src={image.default} alt='Nothing Found' />}</div>
       <p className={styles.title}>{title}</p>
       <ButtonMedium onClick={() => navigate('/')} variant='2'>
         Поиск Вакансий
