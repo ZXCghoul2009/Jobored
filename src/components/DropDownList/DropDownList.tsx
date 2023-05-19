@@ -1,5 +1,4 @@
 import React from 'react';
-import { Loader } from '@/UI/Loaders';
 
 import styles from './DropDownList.module.css';
 
@@ -38,7 +37,7 @@ export const DropDownList = ({
           ))}
         </ul>
       ) : (
-        <div/>
+        <div />
       )}
     </div>
   );

@@ -1,4 +1,3 @@
-export * from './LoginPage/LoginPage';
 export * from './FavoritePage/FavoritePage';
 export * from './SearchPage/SearchPage';
 export * from './VacancyPage/VacancyPage';
