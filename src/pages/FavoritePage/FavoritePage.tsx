@@ -33,7 +33,6 @@ export const FavoritePage = (): JSX.Element => {
     return items.slice(startIndex, endIndex);
   }, []);
   useEffect(() => {
-    setIsLoading(true);
     const favoriteVacancies = localStorage.getItem('vacancies');
     if (favoriteVacancies) {
       setVacancies(JSON.parse(favoriteVacancies));
@@ -44,7 +43,6 @@ export const FavoritePage = (): JSX.Element => {
   useEffect(() => {
     const handleFavoriteVacanciesChange = (event: StorageEvent) => {
       if (event.storageArea === localStorage && event.key === 'vacancies') {
-        setIsLoading(true);
         const favoriteVacancies = event.newValue;
         if (favoriteVacancies) {
           setVacancies(JSON.parse(favoriteVacancies));

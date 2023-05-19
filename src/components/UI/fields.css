@@ -16,6 +16,7 @@
     position: relative;
 }
 .input input {
+    width: 88%;
     border: none;
 }
 .input::placeholder {
