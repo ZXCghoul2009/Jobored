@@ -58,7 +58,6 @@ export const FavoritePage = (): JSX.Element => {
   return (
       <div className={styles.page}>
         <div className={styles.vacancy_info__container}>
-          {!vacancies.length && !isLoading && <EmptyState title='Упс, здесь еще ничего нет!'/>}
           {isLoading && (
               <div
                   style={{
@@ -71,6 +70,7 @@ export const FavoritePage = (): JSX.Element => {
                 <Loader/>
               </div>
           )}
+          {!vacancies.length && !isLoading && <EmptyState title='Упс, здесь еще ничего нет!'/>}
           <div className={styles.vacancies_container}>
             {vacancies && !isLoading &&
             getItemsForPage(vacancies).map((vacancy: any) => (

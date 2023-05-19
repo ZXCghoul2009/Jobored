@@ -14,7 +14,7 @@ export const EmptyState = ({ title }: EmptyStateProps): JSX.Element => {
   return (
     <div className={styles.empty_state}>
       <div>
-        <img src={emptyStateImage.default} alt='Nothing Found' />
+        {emptyStateImage && <img src={emptyStateImage.default} alt='Nothing Found' />}
       </div>
       <p className={styles.title}>{title}</p>
       <ButtonMedium onClick={() => navigate('/')} variant='2'>
