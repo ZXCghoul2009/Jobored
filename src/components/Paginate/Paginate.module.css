@@ -6,47 +6,60 @@
     list-style: none;
     gap: 8px;
 }
-.page {
+
+.page a {
+    width: 2rem;
+    height: 2rem;
     display: flex;
-    padding: 0 0.5rem;
     align-items: center;
-    background:var(--white);
+    justify-content: center;
+    background: var(--white);
     border: 1px solid var(--grey-300);
     border-radius: 4px;
     cursor: pointer;
-
-}
-.page a {
     font-size: 1rem;
     line-height: 140%;
     text-align: center;
     color: var(--black);
 }
-.page_active {
-    background: var(--blue-500-main);
-    border: 1px solid  var(--blue-500-main);
-    border-radius: 4px;
-}
+
 .page_active a {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+    background: var(--blue-500-main);
+    border: 1px solid var(--blue-500-main);
     text-align: center;
     color: var(--white);
 }
+
 .page_active:hover a {
     color: var(--white);
 }
+
 .arrows {
-    padding: 0 0.5rem;
     cursor: pointer;
     background: var(--white);
     border: 1px solid var(--grey-300);
     border-radius: 4px;
 }
-.arrows a {
 
+.arrows a {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .arrows_disabled svg path {
     fill: var(--grey-300);
 }
+
 .arrows_disabled {
     border: 1px solid var(--grey-200);
 }
