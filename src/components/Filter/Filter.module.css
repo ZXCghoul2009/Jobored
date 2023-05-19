@@ -1,9 +1,9 @@
 .filter_container {
     background: var(--white);
-    padding: 1.25rem;
+    padding: 1.2rem;
     border: 1px solid var(--grey-200);
     border-radius: 12px;
-    width: 17.1875rem;
+    width: 17.0875rem;
     max-width: 315px;
     height: max-content;
 }
