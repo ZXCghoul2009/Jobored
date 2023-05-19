@@ -1,17 +1,10 @@
 import React, { useCallback } from 'react';
-import { SearchData } from '@/pages/SearchPage/SearchPage';
+import { FilterProps } from '@/utils/types/types';
 import { useVacancies } from '@/utils/hooks';
 import { ButtonMedium, NumberInput, ResetButton } from '@/UI/index';
 import { DropDown } from '../DropDown/DropDown';
 
 import styles from './Filter.module.css';
-
-type FilterProps = {
-  resetFields: () => void;
-  data: SearchData;
-  updateFields: (fields: Partial<SearchData>) => void;
-  onClose?: () => void;
-};
 
 export const Filter = ({ data, updateFields, resetFields, onClose }: FilterProps): JSX.Element => {
   const changePaymentTo = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {

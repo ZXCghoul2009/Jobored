@@ -1,0 +1,25 @@
+.filter_container__mobile {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: #ACADB9;
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+@media (max-width: 576px) {
+    .filter_container__mobile {
+        display: flex;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+    .filter_container__mobile {
+        display: flex;
+
+    }
+}

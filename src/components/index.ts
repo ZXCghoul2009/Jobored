@@ -4,3 +4,4 @@ export * from './VacancyCard/VacancyCard';
 export * from './VacanciesCards/VacanciesCards';
 export * from './Paginate/Paginate';
 export * from './EmptyState/EmptyState';
+export * from './ModalFilter/ModalFilter';
