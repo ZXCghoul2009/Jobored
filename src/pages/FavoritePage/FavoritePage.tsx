@@ -31,7 +31,8 @@ export const FavoritePage = (): JSX.Element => {
     const startIndex = currentPage * perPage;
     const endIndex = startIndex + perPage;
     return items.slice(startIndex, endIndex);
-  }, []);
+  }, [currentPage]);
+
   useEffect(() => {
     const favoriteVacancies = localStorage.getItem('vacancies');
     if (favoriteVacancies) {
